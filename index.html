@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cloud Xplore &mdash; Visit almost anywhere at any time!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">Cloud Xplore</a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li class="active">
+									<a style = "font-weight: bold;" href="index.html">Home</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			
+		</div>
+		
+		
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(https://wallpaperaccess.com/full/2097761.jpg);
+			background-position: center;">
+			
+		
+		
+		</div>
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+				<div class="desc animate-box">
+					<h2>Travel Around The World.</h2>
+					<!-- <span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FREEHTML5.co</a></span> -->
+					<span><a class="btn btn-primary btn-lg" href="#paris-header">Get Started</a></span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="fh5co-section" style="
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(https://thumbs.dreamstime.com/b/clouds-blue-sky-light-31912398.jpg);
+			background-size: cover;">
+
+			<div class="container">
+				<h1 id = "paris-header" class="paris-header" style="color: #d4d3d3;">Not sure where to go?</h1>
+
+				<form id = "quiz" name = "quiz">
+
+
+					<p class = "questions">How are you feeling today?</p>
+					<input type = "radio" id = "mc" name = "question2" value = "Creative"> Creative<br>
+					<input type = "radio" id = "mc" name = "question2" value = "Adventurous"> Adventurous<br>
+					<input type = "radio" id = "mc" name = "question2" value = "Gloomy"> Gloomy<br>
+					<input type = "radio" id = "mc" name = "question2" value = "Romantic"> Romantic<br>
+					
+					<br>
+					<p class = "questions">What type of dish first comes to your mind?</p>
+					
+					<input type = "radio" id = "mc" name = "question3" value = "Italian"> Italian<br>
+					<input type = "radio" id = "mc" name = "question3" value = "Chinese"> Chinese<br>
+					<input type = "radio" id = "mc" name = "question3" value = "Indian"> Indian<br>
+					<input type = "radio" id = "mc" name = "question3" value = "French"> French<br>
+					
+					
+					<input id = "button" type = "button" value = "Done" onclick = "check();">
+					
+					
+					</form>
+					
+					<div id = "after_submit">
+					<p id = "number_correct"></p>
+					<p id = "message"></p>
+					<img id = "picture">
+					</div>
+
+				<style>
+
+
+p{
+	font-size: large;	
+	padding-top: 10px;
+	padding-bottom: -10px;
+	font-weight: bold;
+}
+#quiz {
+	margin-left: 10px;
+	background: #d4d3d3;
+	padding: 10px 20px 10px 20px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	width: 400px;
+	border-radius: 10px;
+	float: left;
+	font-family: "Raleway", Arial, sans-serif;
+}
+
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+
+#button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+
+
+#button:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+
+}
+
+#after_submit {
+	position: relative;
+	visibility: hidden;
+	background: #add8e6;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 10px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+	top: 50px;
+	height: 480px;
+	right: -200px;
+
+
+}
+
+#picture {
+	width: 375px;
+	height: 245px;
+}
+
+#messages{
+	font-size: large;
+	color: white;
+}
+
+#mc {
+	display: inline;
+} 
+		</style>
+
+<script>
+	
+function check(){
+
+var question2 = document.quiz.question2.value;
+var question3 = document.quiz.question3.value;
+var correct = 0;
+
+
+
+if (question2 == "Romantic") {
+	correct++;
+}	
+if (question3 == "French") {
+	correct++;
+}
+
+var pictures = ["https://wallpaperaccess.com/full/1099133.jpg", "https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg"];
+var messages = ["Paris: Bonjour Mes Amis!", " India: Namaste", "A new country: Very Interesting!"];
+var score;
+
+if (correct == 0) {
+	score = 1;
+}
+
+if (correct == 2) {
+	score = 0;
+}
+
+document.getElementById("after_submit").style.visibility = "visible";
+
+document.getElementById("message").innerHTML = messages[score];
+document.getElementById("number_correct").innerHTML = "Looks like you should visit: ";
+document.getElementById("picture").src = pictures[score];
+}
+
+
+</script>
+
+
+
+
+			</div>
+		</div>
+
+		<div class="fh5co-listing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a href = paris.html class ="fh5co-listing-item">
+							<img src="images/parisImage.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive" style="height: 325px;">
+							<div class="fh5co-listing-copy">
+								<h2>Paris</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a class="fh5co-listing-item">
+							<img src="images/newYorkImage.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive"style="height: 325px;">
+							<div class="fh5co-listing-copy">
+								<h2>New York</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a class="fh5co-listing-item">
+							<img src="images/londom.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive" style="height: 325px;">
+							<div class="fh5co-listing-copy">
+								<h2>London</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<!-- END 3 row -->
+
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a class="fh5co-listing-item">
+							<img src="images/amsterdam.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive" style="height: 325px;">
+							<div class="fh5co-listing-copy">
+								<h2>Amsterdam</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a class="fh5co-listing-item">
+							<img src="images/australia.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive" style="height: 325px;">
+							<div class="fh5co-listing-copy">
+								<h2>Australia</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 fh5co-item-wrap">
+						<a class="fh5co-listing-item">
+							<img src="images/japanImage.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive" style="height: 325px;">
+							<div class="fh5co-listing-copy">
+								<h2>Japan</h2>
+								<span class="icon">
+									<i class="icon-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+					<!-- END 3 row -->
+
+
+				</div>
+			</div>
+		</div>
+
+		
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2016 Free Html5 <a href="#">Listing</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
