@@ -1,7 +1,3 @@
-
-TITLE: 
-Turnerhacks Hackathon
-
 Project Name:
 Cloud Xplore
 
